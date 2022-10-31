@@ -89,6 +89,10 @@ li a::after{
 
 @media only screen and (max-width: 1400px){
 
+    nav{
+        box-shadow: none;
+    }
+
     ul{
         background-color: var(--responsive);
         box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;   
@@ -99,7 +103,7 @@ li a::after{
         position: absolute;
         right: 0;
         text-align: center;
-        top: 10.56vh;
+        top: 7vh;
         transform: translate(105%);
         transition: .5s ease-in-out;
         width: 50vw;
