@@ -105,10 +105,12 @@ li a::after{
         transform: translate(105%);
         transition: .5s ease-in-out;
         width: 50vw;
+        display: none;
     }
 
     ul.active{
         transform: translate(0%);
+        display: flex;
     }
 
     ul li:nth-child(5),
