@@ -16,15 +16,26 @@ html{
 }
 
 :root{
-    --navbar: rgba(240, 46, 170);
-    --responsive: rgba(240, 46, 170);
-    --burger: #1C0221;
-    --button: (90deg, rgba(240,46,170,1) 1%, rgba(28,2,33,1) 100%);
+    --navbar: #CA3C25;
+    --responsive: #CA3C25;
+    --burger: #393424;
+    --button: (90deg, rgba(202, 60, 37, 1) 1%, rgb(43, 12, 7) 100%);
+}
+
+.bg{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    filter: blur(8px);
+    height: 100vh;
+    position: fixed;
+    transform: scale(1.1);
+    width: 100vw;
+    z-index: 0;
 }
 
 nav{
     background-color: var(--navbar);
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    box-shadow: rgba(202, 60, 37,  0.4) 0px 5px, rgba(202, 60, 37,  0.3) 0px 10px, rgba(202, 60, 37,  0.2) 0px 15px, rgba(202, 60, 37,  0.1) 0px 20px, rgba(202, 60, 37,  0.05) 0px 25px;
     display: flex;
     height: 5vh;
     justify-content: space-between;
@@ -34,6 +45,12 @@ nav{
 
 .logo-img{
     width: 120px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: flex;
+    position: absolute;
+    left: 0;
 }
 
 ul{
@@ -95,7 +112,7 @@ li a::after{
 
     ul{
         background-color: var(--responsive);
-        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;   
+        box-shadow: rgba(202, 60, 37, 0.4) -5px 5px, rgba(202, 60, 37, 0.3) -10px 10px, rgba(202, 60, 37, 0.2) -15px 15px, rgba(202, 60, 37, 0.1) -20px 20px, rgba(202, 60, 37, 0.05) -25px 25px;   
         flex-direction: column;
         font-size: italic;
         height: 88.3vh;
