@@ -24,11 +24,10 @@ html{
 
 nav{
     background-color: var(--navbar);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     display: flex;
-    height: 5vh;box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    height: 5vh;
     justify-content: space-between;
-    max-width: 93vw;
-    min-width: 93vw;
     padding: 2rem;
     position: relative;
 }
@@ -90,11 +89,6 @@ li a::after{
 
 @media only screen and (max-width: 1400px){
 
-    nav{
-    max-width: 93vw;
-    min-width: 93vw;
-    }
-
     ul{
         background-color: var(--responsive);
         box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;   
@@ -109,12 +103,10 @@ li a::after{
         transform: translate(105%);
         transition: .5s ease-in-out;
         width: 50vw;
-        display: none;
     }
 
     ul.active{
         transform: translate(0%);
-        display: flex;
     }
 
     ul li:nth-child(5),
@@ -129,6 +121,10 @@ li a::after{
         font-weight: 600;
         letter-spacing: 2.5px;
         margin: 1rem;
+    }
+
+    li{
+        padding: 0;
     }
 
     .hamburger{
