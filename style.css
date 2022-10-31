@@ -1,0 +1,142 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::after, *::befor{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar: rgba(240, 46, 170);
+    --responsive: rgba(240, 46, 170);
+    --burger: #1C0221;
+    --button: (90deg, rgba(240,46,170,1) 1%, rgba(28,2,33,1) 100%);
+}
+
+nav{
+    background-color: var(--navbar);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+    height: 5vh;box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.logo-img{
+    width: 120px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+
+li{
+    padding: 0 3rem;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+}
+
+li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.sign-in a,
+.sign-up a{
+    color: var(--navbar);
+    padding: .7rem;
+    border-radius: 10rem;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+
+.hamburger{
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div{
+    align-items: center;
+    background-color: var(--burger);
+    border-radius: 6px;
+    height: 6px;
+    margin-top: 8px;
+    width: 50px;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+
+    
+
+    ul{
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        background-color: var(--responsive);
+        height: 88.3vh;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        transform: translate(110%);
+        transition: .5s ease-in-out;
+        width: 50vw;
+        font-size: italic;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;    }
+
+    ul.active{
+        transform: translate(0%);
+    }
+
+    ul li:nth-child(5),
+    ul li:nth-child(6){
+        display: flex;
+        justify-content: space-around;
+        transform: translate(0, -50%);
+    }
+
+    li a{
+        font-size: 32px;
+        letter-spacing: 2.5px;
+        font-weight: 600;
+        margin: 1rem;
+    }
+
+    .hamburger{
+        display: block;
+        transition: .5s ease-in-out;
+    }
+
+    .hamburger.active{
+        transform: rotate(270deg);
+    }
+
+}
+@media only screen and (max-width: 700px){
+
+    ul{
+        width: 100vw;
+    }
+
+}
