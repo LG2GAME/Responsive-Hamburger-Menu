@@ -27,7 +27,8 @@ nav{
     display: flex;
     height: 5vh;box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     justify-content: space-between;
-    min-width: 100vw;
+    max-width: 93vw;
+    min-width: 93vw;
     padding: 2rem;
     position: relative;
 }
@@ -89,7 +90,10 @@ li a::after{
 
 @media only screen and (max-width: 1400px){
 
-    
+    nav{
+    max-width: 93vw;
+    min-width: 93vw;
+    }
 
     ul{
         background-color: var(--responsive);
