@@ -51,6 +51,7 @@ nav{
     display: flex;
     position: absolute;
     left: 0;
+    z-index: 20;
 }
 
 ul{
@@ -121,8 +122,8 @@ li a::after{
         right: 0;
         text-align: center;
         top: 7vh;
-        transform: translate(105%);
-        transition: .5s ease-in-out;
+        transform: translateX(-105%);
+        transition: transform .5s ease-in-out;
         width: 50vw;
     }
 
